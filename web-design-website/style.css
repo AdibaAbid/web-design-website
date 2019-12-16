@@ -1,0 +1,275 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  
+}
+header a{
+text-decoration: none;
+color: #222222;
+text-transform: uppercase;
+}
+header li :hover{
+    color: #494545;
+    font-weight: bolder;
+}
+.container{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+header .current a, header .highlight{
+    color: #e8491d;
+}
+
+header{
+    /* background-color: #35424a; */
+    background-color:lightsalmon;
+    color: #222222;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    box-shadow: 0 2px 16px 12px rgba(0,0,0,0.08);
+    z-index: 1;
+}
+nav{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+header .flexible{
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    font-weight: 400;
+}
+header .heading{
+    margin-top: 0;
+}
+
+h1{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+#about-us{
+    min-height: 400px;
+    background-image: url("images/newbkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center -195px;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.7;
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+#head{
+    min-height: 400px;
+   background-image: url("images/bkg.png");
+   background-repeat: no-repeat;
+   background-position: center 5px;
+   background-attachment: fixed;
+   background-size: cover;
+   color: #ffffff;
+   text-align: center;
+   opacity: 0.8;
+}
+
+#head h1, #about-us h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+#head p, #about-us p{
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    background: #35424a75;
+}
+
+.dark{
+    padding: 15px;
+    color: #f4f4f4;
+    background-color: #35424a;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+.subs{
+    background-color: rgb(250, 133, 86);
+   margin-block-end: 15px; 
+}
+
+.subscribe{
+    padding: 15px;
+    color: #222222;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.subscribe form{
+    margin-top: 10px;
+    
+}
+.subscribe input{
+    width:356px;
+    padding: 4px;
+    height: 35px;
+}
+.subscribe h2{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.btn{
+    height: 38px;
+    padding: 15px 30px 30px 30px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    background-color: #e8491d;
+}
+form .btn :hover{
+    box-shadow: 0px 0px 5px white;
+}
+
+
+.box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 12px;
+  color: #222222;
+  cursor: pointer;
+}
+.hov{
+    transition: background-color 4s;
+}
+.hov :hover{
+    background-color: #ff9d76;
+   
+ 
+
+}
+
+.paragraph{
+    display: flex;
+    justify-content: space-around;
+}
+aside{
+    padding: 20px;
+    margin: 0;
+    padding-left: 30px;
+}
+.paragraph .page-title{
+    font-size: 30px;
+    margin: 0;
+    padding-left: 0;
+}
+.services-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.services-flex .page-title{
+margin-top: 20px;
+margin-left: 39px;
+
+}
+ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+aside#sidebar{
+    margin-top: 10px;
+    width: 30%;
+}
+  aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+    cursor: pointer;
+
+  }
+
+footer{
+    text-align: center;
+    background-color: #f78355;
+    padding-top: 20px;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+@media(max-width: 786px){
+    header .flexible,
+    header nav,
+    .subscribe,
+    .subs .subscribe form,
+    .courses .box,
+    .paragraph,
+    .paragraph aside,
+    .services-flex,
+    .services-flex aside#sidebar
+    {
+    text-align:center;
+    width:100%;
+    display: block;
+    }
+    header{
+        padding-top: 10px;
+        padding-bottom:20px;
+      }
+      #head h1{
+        margin-top:40px;
+      }    
+      #head{
+          background-position: center 2px;
+      }
+      .subscribe .btn, #sidebar .btn{
+          width: 100%;
+          margin-top: 5px;
+      }
+      .subscribe input{
+          width: 100%;
+      }
+      aside#sidebar .quote input, 
+      aside#sidebar .quote textarea {
+          width: 96%;
+      }
+      .paragraph aside{
+          padding-left: 0px;
+      }
+      #sidebar{
+          padding-left: 0px;
+      }
+      .services-flex #services{
+          padding-left: 0px;
+      }
+      .services-flex .page-title{
+          margin-left: 0px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
