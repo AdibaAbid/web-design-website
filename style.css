@@ -8,7 +8,7 @@ body{
 }
 header a{
 text-decoration: none;
-color: #222222;
+color: #f4f4f4;
 text-transform: uppercase;
 }
 header li :hover{
@@ -27,7 +27,7 @@ header .current a, header .highlight{
 header{
     
     background-color:#c74739e3;
-    color: #222222;
+    color: #f4f4f4;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #77160b 3px solid;
@@ -115,7 +115,7 @@ h1{
 
 .subscribe{
     padding: 15px;
-    color: #222222;
+    color: #f4f4f4;
     display: flex;
     justify-content: space-around;
    
@@ -209,6 +209,8 @@ footer{
     text-align: center;
     background-color: #d24334;
     padding: 5px;
+    color: #f4f4f4;    
+
     
 }
 @media(max-width: 786px){
